@@ -8,6 +8,11 @@ router.use(function(req, res, next) {
     if (req.body.id) {
         delete req.body.id;
     }
+
+    res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
+    res.header('Expires', '-1');
+    res.header('Pragma', 'no-cache');
+
     next(); // make sure we go to the next routes and don't stop here
 });
 
