@@ -60,7 +60,7 @@ module.exports = {
 
 	down: function(migration, DataTypes, done) {
 		// add reverting commands here, calling 'done' when finished
-		migration.dropTable('nameOfTheExistingTable');
+		migration.dropTable('People');
 		done();
 	}
 };
