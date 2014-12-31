@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/api', api);
-app.use('/ExtJSExcercise', serveStatic('../ExtJSExcercise', {'index': ['index.html']}));
+app.use('/ExtJSExercise', serveStatic('../ExtJSExercise', {'index': ['index.html']}));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
